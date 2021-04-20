@@ -1,0 +1,12 @@
+<p>projects-table works!</p>
+
+<app-table [cols]="cols" [data]="data" [pageSize]="10">
+  <ng-template template="header" let-columns>
+    <div class="column" *ngFor="let col of columns">{{col.colName}}</div>
+  </ng-template>
+  <ng-template template="body" let-data>
+    <div class="row" *ngFor="let col of data.columns">
+      {{data.rowData[col.fieldName]}} <button *ngIf="col.fieldName === 'action'">Delete</button>
+    </div>
+  </ng-template>
+</app-table>

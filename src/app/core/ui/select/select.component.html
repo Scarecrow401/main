@@ -1,0 +1,11 @@
+<div class="select">
+  <div class="select__backdrop" [class.select__backdrop--active]="isOpen" (click)="isOpen = false"></div>
+  <div class="select__input" (click)="toggle()">{{title}}</div>
+  <div [class.select__dropdown--open]="isOpen" class="select__dropdown">
+    <ul class="select__items">
+      <li class="select__item" *ngFor="let item of items" [class.select__item--active]="selectedItem === item" (click)="selectItem(item)">
+        {{item.name}}
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<header class="header">
+  <div class="container">
+    <nav class="menu">
+      <ul class="menu__list">
+        <li routerLinkActive="menu__item--active" [routerLinkActiveOptions]="{exact : true}" class="menu__item">
+          <a [routerLink]="['/']" class="menu__link">Главная</a>
+        </li>
+        <li routerLinkActive="menu__item--active" class="menu__item">
+          <a [routerLink]="['about']" class="menu__link">Обо мне</a>
+        </li>
+        <li routerLinkActive="menu__item--active" class="menu__item">
+          <a [routerLink]="['projects']" class="menu__link">Проекты</a>
+        </li>
+        <li routerLinkActive="menu__item--active" class="menu__item">
+          <a [routerLink]="['news']" class="menu__link">Новости</a>
+        </li>
+        <li routerLinkActive="menu__item--active" class="menu__item">
+          <a [routerLink]="['contacts']" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,15 @@
+.projects__list {
+  display: flex;
+  justify-content: center;
+}
+
+.projects__item {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.wrapper {
+  width: 1300px;
+  margin: 0 auto;
+}

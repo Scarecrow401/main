@@ -1,0 +1,6 @@
+<div class="file">
+  <input class="file__input" type="file" #fileRef />
+  <button *ngIf="!selectedFile" class="file__btn" (click)="triggerInput()">Выбрать файл</button>
+  <span>{{!!selectedFile ? selectedFile.name : ""}}</span>
+  <button *ngIf="selectedFile" class="file__btn file__btn--close" (click)="remove()">&times;</button>
+</div>

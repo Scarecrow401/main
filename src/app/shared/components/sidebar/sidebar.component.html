@@ -1,0 +1,18 @@
+<aside class="sidebar">
+  <div class="sidebar__inner">
+    <ul class="sidebar__list">
+      <li routerLinkActive="sidebar__item--active" class="sidebar__item" *ngFor="let item of items">
+        <a routerLink="{{item.path}}" class="sidebar__link">{{item.path}}</a>
+      </li>
+      <!-- <li routerLinkActive="sidebar__item--active" class="sidebar__item">
+        <a routerLink="files" class="sidebar__link">files</a>
+      </li>
+      <li routerLinkActive="sidebar__item--active" class="sidebar__item">
+        <a routerLink="buttons" class="sidebar__link">buttons</a>
+      </li>
+      <li routerLinkActive="sidebar__item--active" class="sidebar__item">
+        <a routerLink="spinner" class="sidebar__link">spinner</a>
+      </li> -->
+    </ul>
+  </div>
+</aside>

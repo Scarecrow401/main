@@ -1,0 +1,25 @@
+<nav class="projects__menu">
+  <ul class="projects__list">
+    <li class="projects__item">
+      <a [routerLink]="['button']" class="projects__link">Button</a>
+    </li>
+    <li class="projects__item">
+      <a [routerLink]="['select']" class="projects__link">Select</a>
+    </li>
+    <li class="projects__item">
+      <a [routerLink]="['files']" class="projects__link">Files</a>
+    </li>
+    <li class="projects__item">
+      <a [routerLink]="['modal']" class="projects__link">Modal</a>
+    </li>
+    <li class="projects__item">
+      <a [routerLink]="['input']" class="projects__link">Input</a>
+    </li>
+    <li class="projects__item">
+      <a [routerLink]="['table']" class="projects__link">Table</a>
+    </li>
+  </ul>
+</nav>
+<div class="wrapper">
+  <router-outlet></router-outlet>
+</div>

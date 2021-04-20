@@ -1,0 +1,51 @@
+%columnRowBaseStyles {
+  flex: 0 0 50px;
+  display: flex;
+  align-items: center;
+}
+
+:host ::ng-deep .table-container {
+  height: auto;
+  width: inherit;
+  user-select: none;
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  .table-row {
+    @extend %columnRowBaseStyles;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #ccc;
+    }
+
+    .row {
+      &:first-child {
+        margin: 0 0 0 20px;
+        flex: 0 0 30px;
+      }
+      flex: 1;
+      font-size: 14px;
+    }
+  }
+
+  .table-column {
+    @extend %columnRowBaseStyles;
+    .column {
+      &:first-child {
+        margin: 0 0 0 20px;
+        flex: 0 0 30px;
+      }
+      flex: 1;
+      color: #a9a9a9;
+    }
+  }
+}

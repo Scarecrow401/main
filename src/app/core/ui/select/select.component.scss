@@ -1,0 +1,71 @@
+@import '../../../../assets/scss/const.scss';
+
+.select {
+  position: relative;
+
+  &__input {
+    border: 1px solid #ccc;
+    height: 45px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &__dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+    overflow: auto;
+    max-height: 200px;
+    cursor: pointer;
+    background-color: #fff;
+
+    &--open {
+      display: block;
+    }
+  }
+
+  &__item {
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+
+    &--active {
+      background-color: $secondaryColor;
+    }
+
+    &:hover {
+      &:not(.select__item--active) {
+        background-color: #eee;
+      }
+    }
+  }
+
+  &__backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: none;
+
+    &--active {
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+}

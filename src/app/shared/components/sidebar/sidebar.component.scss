@@ -1,0 +1,16 @@
+@import '../../../../assets/scss/const.scss';
+
+.sidebar {
+  &__item {
+    &--active {
+      background-color: $secondaryColor;
+    }
+  }
+
+  &__link {
+    padding: 10px 20px;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../../../assets/scss/const.scss";
+
+.social {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    background-color: $accentColor;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
